@@ -1,0 +1,317 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/profileRelativeLayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:clickable="false"
+            android:duplicateParentState="false"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Name"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#ff7f11"
+            android:paddingBottom="5dp"
+            android:layout_toRightOf="@+id/profile_photo" />
+
+        <TextView
+            android:id="@+id/profile_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address here"
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/profile_name"
+            android:layout_toRightOf="@+id/profile_photo" />
+
+        <TextView
+            android:id="@+id/profile_birthdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday"
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/profile_address"
+            android:layout_toRightOf="@+id/profile_photo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Contact Information"
+            android:id="@+id/labelContactInformation"
+            android:layout_marginTop="16dp"
+            android:textColor="#ff7f11"
+            android:layout_below="@+id/profile_birthdate"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile:"
+            android:id="@+id/labelMobile"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/labelContactInformation"
+            android:layout_toLeftOf="@+id/profile_birthdate"
+            android:layout_marginTop="11dp"
+            android:paddingBottom="5dp"
+            android:textColor="#2c2dff" />
+
+        <TextView
+            android:textColor="#2c2dff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Office:"
+            android:id="@+id/labelWorkPhone"
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/labelMobile"
+            android:layout_alignLeft="@+id/labelMobile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0000 - 0000 - 000)"
+            android:id="@+id/profile_mobile"
+            android:singleLine="true"
+            android:layout_alignTop="@+id/labelMobile"
+            android:layout_toRightOf="@+id/profile_action_call_mobile"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0000 - 0000 - 000)"
+            android:id="@+id/profile_work"
+            android:singleLine="true"
+            android:layout_alignTop="@+id/labelWorkPhone"
+            android:layout_toRightOf="@+id/profile_action_call_mobile"
+            android:paddingBottom="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_action_call_mobile"
+            android:src="@drawable/ic_action_call"
+            android:layout_below="@+id/labelContactInformation"
+            android:layout_toRightOf="@+id/labelMobile" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_action_call_office"
+            android:src="@drawable/ic_action_call"
+            android:layout_above="@+id/profile_email"
+            android:layout_toRightOf="@+id/profile_photo" />
+
+        <TextView
+            android:textColor="#2c2dff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail:"
+            android:id="@+id/labelEmail"
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/labelWorkPhone"
+            android:layout_alignLeft="@+id/labelWorkPhone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_action_email"
+            android:src="@drawable/ic_action_email"
+            android:layout_above="@+id/labelAboutContact"
+            android:layout_alignLeft="@+id/profile_action_call_office" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@email.com"
+            android:id="@+id/profile_email"
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/profile_work"
+            android:layout_toRightOf="@+id/profile_action_call_office" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="About"
+            android:id="@+id/labelAboutContact"
+            android:layout_marginTop="16dp"
+            android:textColor="#ff7f11"
+            android:layout_below="@+id/labelEmail"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="#2c2dff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:id="@+id/labelGender"
+            android:layout_below="@+id/labelAboutContact"
+            android:layout_alignLeft="@+id/labelEmail"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male / Female"
+            android:id="@+id/profile_gender"
+            android:paddingBottom="5dp"
+            android:layout_alignTop="@+id/labelGender"
+            android:layout_toRightOf="@+id/profile_action_email" />
+
+        <TextView
+            android:textColor="#2c2dff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Civil Status:"
+            android:id="@+id/labelCivilStatus"
+            android:layout_below="@+id/labelGender"
+            android:layout_alignLeft="@+id/labelGender"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single"
+            android:id="@+id/profile_civilStatus"
+            android:layout_alignTop="@+id/labelCivilStatus"
+            android:layout_alignLeft="@+id/profile_gender"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:textColor="#2c2dff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Hired:"
+            android:id="@+id/labelHiredDate"
+            android:layout_below="@+id/labelCivilStatus"
+            android:layout_alignLeft="@+id/labelCivilStatus"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09/12/2000"
+            android:id="@+id/profile_hired_date"
+            android:layout_alignTop="@+id/labelHiredDate"
+            android:layout_alignLeft="@+id/profile_civilStatus"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:textColor="#2c2dff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            android:id="@+id/labelLocation"
+            android:layout_below="@+id/labelHiredDate"
+            android:layout_alignLeft="@+id/labelHiredDate"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uyanguren, Davao City"
+            android:id="@+id/profile_location"
+            android:layout_below="@+id/profile_hired_date"
+            android:layout_alignLeft="@+id/profile_hired_date"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:textColor="#2c2dff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position:"
+            android:id="@+id/labelPosition"
+            android:layout_below="@+id/labelLocation"
+            android:layout_alignLeft="@+id/labelLocation"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IT Manager"
+            android:id="@+id/profile_position"
+            android:layout_alignTop="@+id/labelPosition"
+            android:layout_alignLeft="@+id/profile_location"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:textColor="#2c2dff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department:"
+            android:id="@+id/labelDepartment"
+            android:layout_below="@+id/labelPosition"
+            android:layout_alignLeft="@+id/labelPosition"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Information Technology"
+            android:id="@+id/profile_department"
+            android:layout_below="@+id/profile_position"
+            android:layout_alignLeft="@+id/profile_position" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/labelDepartment"
+            android:text="In Case of Emergency"
+            android:id="@+id/labelContacts"
+            android:textColor="#ff7f11"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/profile_emergency_contacts_table"
+            android:layout_below="@+id/labelContacts"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableLayout>
+
+        <TextView
+            android:id = "@+id/labelWages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff7f11"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Salary History"
+            android:layout_below="@+id/profile_emergency_contacts_table"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/labelWages"
+            android:id="@+id/profile_wages_history_table"></TableLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

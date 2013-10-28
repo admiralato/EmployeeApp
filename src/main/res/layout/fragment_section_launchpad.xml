@@ -1,0 +1,139 @@
+<!--
+  Copyright 2012 The Android Open Source Project
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="gen_info">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Account"
+            android:id="@+id/isAdmin" />
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:hint="@string/code"
+            android:ems="10"
+            android:width="150dip" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:hint="@string/fullname" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:hint="@string/address"
+            android:layout_marginTop="5dip" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/birthdate"
+            android:hint="Birthdate (mm/dd/yyy)" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/mobile"
+            android:hint="Mobile No" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginTop="5dip"
+            android:ems="10"
+            android:id="@+id/workPhone"
+            android:hint="Work Phone" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/email"
+            android:hint="Email" />
+
+            <Spinner
+                android:id="@+id/gender_options"
+                android:layout_marginTop="5dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/civil_status"
+            android:layout_marginTop="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/hired_date"
+            android:hint="Hired Date (mm/dd/yyyy)" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:hint="Location" />
+
+        <Spinner
+            android:id="@+id/position"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/department"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>
